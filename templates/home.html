@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}All the Things - Home{% endblock %}
+{% block title %}Cookie Stand Manager - Home{% endblock %}
 
 {% block content %}
   {% if user.is_authenticated %}
     <div class="space-y-8">
 
       <h2 class="text-4xl">Hi {{ user.username }}!</h2>
-      <p>Maybe one day you'll see a glorious home page here.</p>
-      <p>But for now just notice that List and Create are in Nav bar.</p>
+      <p>This page shall be a glorious dashboard for the user's cookie stands.</p>
+      <p>But for now, they can use List and Create in Nav bar to view their stands and create new stands, respectively.</p>
     </div>
 
   {% else %}
