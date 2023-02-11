@@ -29,6 +29,7 @@ env = environ.Env(
     DATABASE_PASSWORD=(str, ""),
     DATABASE_HOST=(str, ""),
     DATABASE_PORT=(int, 5432),
+    # CSRF_TRUSTED_ORIGINS=(list, []),
 )
 
 environ.Env.read_env()
@@ -186,4 +187,4 @@ STATICFILES_DIRS = [
 LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "home"
 
-# CSRF_TRUSTED_ORIGINS = env.list('CSRF_TRUSTED_ORIGINS')
+# CSRF_TRUSTED_ORIGINS = tuple(env.list('CSRF_TRUSTED_ORIGINS'))
